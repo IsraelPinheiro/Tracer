@@ -16,5 +16,11 @@ class DatabaseSeeder extends Seeder{
         $this->call(RoleSeeder::class);
         $this->call(TaskTypeSeeder::class);
         $this->call(TicketTypeSeeder::class);
+        if(app()->environment('local')){
+           
+        }
+        if(app()->environment('production')){
+            
+        }
     }
 }
