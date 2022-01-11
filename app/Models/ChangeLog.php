@@ -9,4 +9,10 @@ class ChangeLog extends Model{
     use HasFactory;
 
     const UPDATED_AT = null;
+    
+    //Relationships
+    //An Change Log can belong to a Attachment, Comment, Profile, Project, Role, Task, Task Type, Task Template, Ticket, Ticket Type, Ticket Template or User
+    public function loggable(){
+        return $this->morphTo();
+    }
 }
