@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ChangeLog extends Model
-{
+class ChangeLog extends Model{
     use HasFactory;
+
+    const UPDATED_AT = null;
 }
