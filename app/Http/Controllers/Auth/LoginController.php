@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Validation\ValidationException;
+use App\Models\AccessLog;
 use App\Models\User;
 
 class LoginController extends Controller
@@ -36,8 +37,7 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('guest')->except('logout');
     }
 
@@ -84,5 +84,20 @@ class LoginController extends Controller
         $this->incrementLoginAttempts($request);
 
         return $this->sendFailedLoginResponse($request);
+    }
+
+    /**
+     * The user has been authenticated.
+     * Overrides the default authenticated() funtion from \Illuminate\Foundation\Auth\AuthenticatesUsers
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function authenticated(Request $request, $user){
+        $AccessLog = new AccessLog;
+        $AccessLog->user_id = $user->id;
+        $AccessLog->origin = $request->getClientIp();
+        $AccessLog->save();
     }
 }
