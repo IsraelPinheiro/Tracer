@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ChangeLog extends Model{
     use HasFactory;
 
+    //Disable updated_at
     const UPDATED_AT = null;
     
     //Relationships
