@@ -47,4 +47,14 @@ class User extends Authenticatable{
     public function profile(){
         return $this->belongsTo(Profile::class);
     }
+    //Notifications
+    public function notifications_to(){
+        return $this->hasMany(Notification::class, 'from_id');
+    }
+    public function notifications_from(){
+        return $this->hasMany(Notification::class, 'to_id');
+    }
+    public function unread_notifications(){
+        return $this->hasMany(Notification::class, 'to_id')->where('read', false)->get();
+    }
 }
