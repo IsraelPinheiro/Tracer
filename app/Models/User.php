@@ -51,6 +51,17 @@ class User extends Authenticatable{
     public function default_role(){
         return $this->belongsTo(Role::class, 'default_role_id');
     }
+    //User's system access
+    public function accesses(){
+        return $this->hasMany(AccessLog::class);
+    }
+    public function lastAccess(){
+        return $this->hasOne(AccessLog::class)->latest();
+    }
+    //User's activity log
+    public function logs(){
+        return $this->morphMany(ChangeLog::class, 'loggable');
+    }
     //Notifications
     public function notifications_to(){
         return $this->hasMany(Notification::class, 'from_id');
