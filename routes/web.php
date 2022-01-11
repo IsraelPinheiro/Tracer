@@ -20,3 +20,8 @@ Route::get('/', function (){
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 
 Auth::routes(['register' => false]);
+
+//Users
+Route::resource('users', App\Http\Controllers\UserController::class)->middleware('auth');
+//Profiles
+Route::resource('profiles', App\Http\Controllers\ProfileController::class)->middleware('auth');
