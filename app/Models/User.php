@@ -51,6 +51,14 @@ class User extends Authenticatable{
     public function default_role(){
         return $this->belongsTo(Role::class, 'default_role_id');
     }
+    //User's Owned Projects
+    public function owned(){
+        return $this->hasMany(User::class, 'owner_id');
+    }
+    //User's Managed Projects
+    public function managed(){
+        return $this->hasMany(User::class, 'manager_id');
+    }
     //User's system access
     public function accesses(){
         return $this->hasMany(AccessLog::class);
