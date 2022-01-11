@@ -47,6 +47,10 @@ class User extends Authenticatable{
     public function profile(){
         return $this->belongsTo(Profile::class);
     }
+    //User's Default Role
+    public function default_role(){
+        return $this->belongsTo(Role::class, 'default_role_id');
+    }
     //Notifications
     public function notifications_to(){
         return $this->hasMany(Notification::class, 'from_id');
