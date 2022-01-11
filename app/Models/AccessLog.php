@@ -16,4 +16,9 @@ class AccessLog extends Model{
     protected $casts = [
         'accessed_at' => 'datetime',
     ];
+    //Relationships
+    //User
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
