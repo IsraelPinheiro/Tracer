@@ -1,0 +1,121 @@
+//
+//Dashmix - UI Framework
+//--------------------------------------------------
+//Bootstrap functions
+@import '~bootstrap/scss/functions';
+//User variables (your own variable overrides)
+@import 'custom/variables';
+//Custom Bootstrap variables overrides
+@import 'dashmix/variables-bootstrap';
+//Bootstrap variables
+@import '~bootstrap/scss/variables';
+//Bootstrap mixins
+@import '~bootstrap/scss/mixins';
+//Custom mixins and Bootstrap overrides
+@import 'dashmix/mixins';
+//Bootstrap Utilities
+@import '~bootstrap/scss/utilities';
+//Custom utilities and Bootstrap overrides
+@import 'dashmix/utilities';
+//Layout & components
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/accordion';
+@import '~bootstrap/scss/breadcrumb';
+@import '~bootstrap/scss/pagination';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/progress';
+@import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/tooltip';
+@import '~bootstrap/scss/popover';
+@import '~bootstrap/scss/carousel';
+@import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/placeholders';
+//Bootstrap Helpers
+@import '~bootstrap/scss/helpers';
+//Bootstrap Utilities
+@import '~bootstrap/scss/utilities/api';
+//Custom variables
+@import 'dashmix/variables';
+@import 'dashmix/variables-themes';
+//Extend Bootstrap styles and override the ones we can't alter with the provided variables
+@import 'dashmix/reboot';
+@import 'dashmix/type';
+@import 'dashmix/grid';
+@import 'dashmix/tables';
+@import 'dashmix/forms';
+@import 'dashmix/buttons';
+@import 'dashmix/transitions';
+@import 'dashmix/dropdown';
+@import 'dashmix/nav';
+@import 'dashmix/breadcrumb';
+@import 'dashmix/pagination';
+@import 'dashmix/modal';
+@import 'dashmix/print';
+//Custom layout
+@import 'dashmix/layout';
+@import 'dashmix/header';
+@import 'dashmix/sidebar';
+@import 'dashmix/side-overlay';
+@import 'dashmix/layout-variations';
+@import 'dashmix/hero';
+@import 'dashmix/block';
+//Custom components
+@import 'dashmix/page-loader';
+@import 'dashmix/nav-main';
+@import 'dashmix/images';
+@import 'dashmix/lists';
+@import 'dashmix/item';
+@import 'dashmix/overlay';
+@import 'dashmix/timeline';
+@import 'dashmix/ribbon';
+//Helpers
+@import 'dashmix/helpers';
+//Core third party components
+@import '~animate.css/animate';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~simple-line-icons/scss/simple-line-icons';
+@import '~simplebar/src/simplebar';
+//Optional third party plugins (style overrides)
+@import 'vendor/bootstrap-colorpicker';
+@import 'vendor/bootstrap-datepicker';
+@import 'vendor/ckeditor';
+@import 'vendor/dropzone';
+@import 'vendor/datatables';
+@import 'vendor/easy-pie-chart';
+@import 'vendor/fullcalendar';
+@import 'vendor/ion-range-slider';
+@import 'vendor/jquery-sparkline';
+@import 'vendor/jvector-map';
+@import 'vendor/pw-strength';
+@import 'vendor/select2';
+@import 'vendor/simplemde';
+@import 'vendor/slick';
+@import 'vendor/nestable2';
+@import 'vendor/flatpickr';
+//RTL Support
+@import 'dashmix/rtl-support';
+//Dark mode
+@import 'dashmix/dark-mode';
+//User styles (your own styles/overrides)
+@import 'custom/main';
