@@ -11,6 +11,11 @@
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
+        "@fullcalendar/core": "^5.10.1",
+        "@fullcalendar/daygrid": "^5.10.1",
+        "@fullcalendar/interaction": "^5.10.1",
+        "@fullcalendar/list": "^5.10.1",
+        "@fullcalendar/timegrid": "^5.10.1",
         "@popperjs/core": "^2.10.2",
         "animate.css": "^4.1.1",
         "axios": "^0.21",
