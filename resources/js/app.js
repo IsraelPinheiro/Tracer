@@ -1,7 +1,7 @@
 //Base and initialization
 require('./bootstrap')
 //Dashmix
-require('./dashmix')
+require('./dashmix/dashmix')
 //Datatables + Plugins
 require('./datatables')
 //Datatables Initialization
