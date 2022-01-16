@@ -28,7 +28,7 @@
 			<p class="mt-3 mb-0 d-lg-flex justify-content-lg-between">
 				@if (Route::has('password.request'))
 					<a class="btn btn-sm btn-alt-secondary d-block d-lg-inline-block mb-1" href="{{ route('password.request') }}">
-						<i class="fa fa-exclamation-triangle opacity-50 me-1"></i> {{ __('Forgot Your Password?') }}
+						<i class="fa fa-exclamation-triangle opacity-50 me-1"></i> {{ __('Forgot Your Password ?') }}
 					</a>
 				@endif
 				@if (Route::has('register'))
