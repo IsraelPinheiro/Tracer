@@ -10,7 +10,7 @@ require('./datatables.init')
 require('./fullcalendar')
 //CKEditor - https://ckeditor.com
 require('@ckeditor/ckeditor5-build-classic')
-require('@ckeditor/ckeditor5-build-inline')
+//require('@ckeditor/ckeditor5-build-inline')
 //Bootstrap Colorpicker - https://itsjavi.com/bootstrap-colorpicker/
 require('bootstrap-colorpicker')
 //Bootstrap Datepicker - https://github.com/uxsolutions/bootstrap-datepicker
