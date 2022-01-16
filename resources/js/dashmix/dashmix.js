@@ -7467,7 +7467,7 @@
                               i && ((n = i.querySelector('[data-toggle="block-option"][data-action="fullscreen_toggle"]')), (r = i.querySelector('[data-toggle="block-option"][data-action="content_toggle"]')), c[e] && c[e]()));
                     }
                     onLoad(e) {
-                        "loading" != document.readyState ? e() : document.addEventListener("DOMContentLoaded", e);
+                        "loading" != document.readyState ? e : document.addEventListener("DOMContentLoaded", e);
                     }
                     init() {
                         this._uiInit();
