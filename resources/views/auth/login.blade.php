@@ -40,3 +40,5 @@
 		</div>
 	</form>
 @endsection
+
+@section('image',asset('storage/images/auth/login.jpg'))
