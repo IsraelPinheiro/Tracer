@@ -1,0 +1,25 @@
+//Datatables + Plugins
+require('jszip');
+require('pdfmake');
+require('datatables.net');
+require('datatables.net-bs5');
+require('datatables.net-autofill-bs5');
+require('datatables.net-buttons-bs5');
+require('datatables.net-buttons/js/buttons.colVis.js');
+require('datatables.net-buttons/js/buttons.html5.js');
+require('datatables.net-buttons/js/buttons.print.js');
+require('datatables.net-colreorder-bs5');
+require('datatables.net-datetime');
+require('datatables.net-fixedcolumns-bs5');
+require('datatables.net-fixedheader-bs5');
+require('datatables.net-keytable-bs5');
+require('datatables.net-responsive');
+require('datatables.net-responsive-bs5');
+require('datatables.net-rowgroup-bs5');
+require('datatables.net-rowreorder');
+require('datatables.net-rowreorder-bs5');
+require('datatables.net-scroller-bs5');
+require('datatables.net-searchbuilder-bs5');
+require('datatables.net-searchpanes-bs5');
+require('datatables.net-select-bs5');
+require('datatables.net-staterestore-bs5');
